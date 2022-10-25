@@ -1,8 +1,9 @@
 import { Layout } from 'antd'
 import Background from './background'
+import Header from './header'
 import Footer from './footer'
 
-export default function Layout({ children }) {
+export default function Wrapper({ children }) {
 	return (
 		<div className='flex flex-col h-screen w-full'>
 			<div className='bg-gradient w-full h-full relative'>
@@ -10,7 +11,10 @@ export default function Layout({ children }) {
 				<Layout className='w-full h-full z-30 relative' style={{ background: 'none' }}>
 					<Layout style={{ background: 'none', color: 'white' }}>
 						<Layout.Content className='relative'>
-							<div className='w-full h-full'>{children}</div>
+							<div className='w-full h-full'>
+								<Header />
+								{children}
+							</div>
 						</Layout.Content>
 						<Footer />
 					</Layout>
