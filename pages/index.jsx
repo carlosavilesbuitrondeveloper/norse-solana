@@ -1,4 +1,3 @@
-import Wrapper from '../components/wrapper'
 import Hero from '../components/hero'
 import Meta from '../components/meta'
 import Factions from '../components/factions'
@@ -36,18 +35,17 @@ export default function Home() {
 	return (
 		<>
 			<Meta title='Norse NFT | Home' />
-			<Wrapper>
-				{/* Hero */}
-				<Hero image='https://storage.neptunecs.com/fenrir/ui/wolf.jpg' />
 
-				{/* Factions */}
-				<ShadowWrapper>
-					<Factions title='The Factions' factions={factions} />
-				</ShadowWrapper>
+			{/* Hero */}
+			<Hero image='https://storage.neptunecs.com/fenrir/ui/wolf.jpg' />
 
-				{/* Call to Action */}
-				<Action image='/images/dark-lady-ui.jpg' />
-			</Wrapper>
+			{/* Factions */}
+			<ShadowWrapper>
+				<Factions title='The Factions' factions={factions} />
+			</ShadowWrapper>
+
+			{/* Call to Action */}
+			<Action image='/images/dark-lady-ui.jpg' />
 		</>
 	)
 }
