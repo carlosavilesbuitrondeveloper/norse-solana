@@ -13,7 +13,7 @@ export default function Wrapper({ children }) {
 						<Layout.Content className='relative'>
 							<div className='w-full h-full'>
 								<Header />
-								{children}
+								<div className='w-full h-full overflow-x-hidden overflow-y-auto relative'>{children}</div>
 							</div>
 						</Layout.Content>
 						<Footer />
