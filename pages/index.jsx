@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import Meta from '../components/meta'
 import Factions from '../components/factions'
 import ShadowWrapper from '../components/shadowWrapper'
+import Action from '../components/action'
 
 export default function Home() {
 	const factions = [
@@ -45,6 +46,7 @@ export default function Home() {
 				</ShadowWrapper>
 
 				{/* Call to Action */}
+				<Action image='/images/dark-lady-ui.jpg' />
 			</Wrapper>
 		</>
 	)
