@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--main: #010a11;
+	--dark: #0b0232;
+	--fontregular: #0d1926;
+	--danger: #ff0b4a;
+	--inactive: #c7c5c5;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
