@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useWallet } from '@solana/wallet-adapter-react'
 import { useProgram, useNFTs } from '@thirdweb-dev/react/solana'
 import { Row } from 'antd'
+import programAddress from '../components/program'
 import Item from '../components/item'
 import Logo from '../components/logo'
 import Meta from '../components/meta'
@@ -10,7 +11,7 @@ import Meta from '../components/meta'
 export default function Collection() {
 	const router = useRouter()
 	const wallet = useWallet()
-	const id = 'T3RaMKRnKnRTA8PXTyzA1mnpSnuMZaeT74fAsURjxX8'
+	const id = programAddress
 	const { program, error } = useProgram(id, 'nft-drop')
 	const { data: metadata, isLoading, error: nfterror } = useNFTs(program)
 
