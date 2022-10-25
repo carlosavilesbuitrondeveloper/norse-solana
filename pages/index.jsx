@@ -43,6 +43,8 @@ export default function Home() {
 				<ShadowWrapper>
 					<Factions title='The Factions' factions={factions} />
 				</ShadowWrapper>
+
+				{/* Call to Action */}
 			</Wrapper>
 		</>
 	)
