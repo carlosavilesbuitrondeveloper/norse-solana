@@ -1,4 +1,5 @@
 import { HiOutlineMenu } from 'react-icons/hi'
+import Link from 'next/link'
 import { useState } from 'react'
 import SideNav from './sidenav'
 
@@ -17,9 +18,15 @@ export default function Header() {
 				>
 					<HiOutlineMenu />
 				</button>
-				<div className='ml-3 text-xl'>Norse NFT</div>
+				<div className='ml-3 text-xl'>
+					<Link href='/'>
+						<a>Norse NFT</a>
+					</Link>
+				</div>
 			</div>
-			<button className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</button>
+			<Link href='/auth'>
+				<a className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</a>
+			</Link>
 		</div>
 	)
 }
