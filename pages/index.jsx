@@ -8,27 +8,27 @@ export default function Home() {
 	const factions = [
 		{
 			name: 'Futurists',
-			role: 'Inquisition',
+			role: 'Dark',
 			imageUrl: '/images/ui-faction-01.jpg',
-			bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+			bio: 'Followers of the dark powers that seek to merge magic and technology. Futurists will often have infernals and other supernaturnal creatures working for them.',
 		},
 		{
 			name: 'Cultists',
-			role: 'Corrupted',
+			role: 'Dark',
 			imageUrl: '/images/ui-faction-02.jpg',
-			bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+			bio: 'Cultists use dark rituals to attain greater knowledge of the infernal dimensions. Cultists will often summon spirits to battle on their behalf.',
 		},
 		{
 			name: 'Protectors',
-			role: 'Pure',
+			role: 'Light',
 			imageUrl: '/images/ui-faction-03.jpg',
-			bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+			bio: 'Light defenders that might use or not use magic. Humans and ethereals comprise most of the protector faction but you do find the odd infernal in their ranks on occasion.',
 		},
 		{
 			name: 'Supernaturals',
-			role: 'Ethereal',
+			role: 'Light/Dark',
 			imageUrl: '/images/ui-faction-04.jpg',
-			bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+			bio: 'Summoned creatues, warriors, guardians and more. Supernaturals is the umbrella term for any being not born in one of the human dimensions.',
 		},
 	]
 

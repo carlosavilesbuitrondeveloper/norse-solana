@@ -7,7 +7,7 @@ import Wrapper from '../components/wrapper'
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<ThirdwebProvider network={'devnet'}>
+		<ThirdwebProvider network={'https://solana-devnet.g.alchemy.com/v2/7d-C_qttUPHcfzcKDCTCh_tx6j7EhQkw'}>
 			<WalletModalProvider>
 				<Wrapper>
 					<Component {...pageProps} />

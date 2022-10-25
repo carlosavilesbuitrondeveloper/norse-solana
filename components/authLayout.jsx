@@ -34,10 +34,20 @@ export default function AuthLayout() {
 				.wallet-adapter-button.wallet-adapter-button-trigger:hover {
 					color: white;
 				}
+				.auth-bg {
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
 			`}</style>
-			<div className='flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 bg-dark-gradient'>
-				<div className='mx-auto w-full max-w-sm lg:w-96 text-center'>
+			<div
+				style={{ backgroundImage: 'url(/images/bg-connect.png)' }}
+				className='auth-bg flex flex-1 z-20 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 bg-dark-gradient relative'
+			>
+				<div className='bg-black opacity-50	absolute inset-0 z-20' />
+				<div className='mx-auto w-full max-w-sm lg:w-96 text-center z-30'>
 					<h1 className='text-white text-7xl decorative'>Norse NFT</h1>
+					<h2 className='text-white mt-3 text-lg'>A dark fantasy NFT collection.</h2>
 					<Logo />
 					<WalletMultiButton />
 				</div>
