@@ -2,6 +2,7 @@ import { Layout } from 'antd'
 import Background from './background'
 import Header from './header'
 import Footer from './footer'
+require('@solana/wallet-adapter-react-ui/styles.css')
 
 export default function Wrapper({ children }) {
 	return (

@@ -9,10 +9,6 @@ export default function Header() {
 	const [open, setOpen] = useState(false)
 	const wallet = useWallet()
 
-	useEffect(() => {
-		console.log(wallet)
-	}, [wallet])
-
 	return (
 		<div className='decorative w-full h-12 bg-black text-white flex justify-between items-center p-2 relative z-50'>
 			<SideNav collapsed={open} setCollapsed={setOpen} />

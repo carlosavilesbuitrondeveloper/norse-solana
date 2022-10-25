@@ -1,7 +1,6 @@
 import Logo from '../components/logo'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { useWallet } from '@solana/wallet-adapter-react'
-require('@solana/wallet-adapter-react-ui/styles.css')
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
