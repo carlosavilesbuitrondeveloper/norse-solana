@@ -1,7 +1,7 @@
 import { useClaimNFT, useClaimConditions } from '@thirdweb-dev/react/solana'
 
 export default function Minter({ image, program }) {
-	const { data: claimCondition, isLoading: loadingClaimCondition } = useClaimConditions(program)
+	// const { data: claimCondition, isLoading: loadingClaimCondition } = useClaimConditions(program)
 	const { mutateAsync: claim, isLoading, error } = useClaimNFT(program)
 
 	const handleClaim = async () => {
@@ -47,11 +47,11 @@ export default function Minter({ image, program }) {
 						Claim
 					</button>
 
-					{!loadingClaimCondition && (
+					{/* {!loadingClaimCondition && (
 						<p className='mt-10 text-white text-xl'>
 							Inventory Remaining: {claimCondition.claimedSupply} / {claimCondition.maxClaimable}
 						</p>
-					)}
+					)} */}
 
 					<div className='placeholder-height'></div>
 				</div>

@@ -1,6 +1,4 @@
-function classNames(...classes) {
-	return classes.filter(Boolean).join(' ')
-}
+import Link from 'next/link'
 
 export default function Hero({ image }) {
 	return (
@@ -19,12 +17,11 @@ export default function Hero({ image }) {
 						</p>
 						<div className='mt-10 sm:flex sm:justify-center lg:justify-start'>
 							<div className='rounded-md shadow'>
-								<a
-									href='#'
-									className='flex w-full items-center justify-center rounded-md border border-transparent bg-black hover:text-white hover:bg-slate-800 text-white px-8 py-3 text-base font-medium md:py-4 md:px-10 md:text-lg'
-								>
-									Browse NFTs
-								</a>
+								<Link href='/browse'>
+									<a className='flex w-full items-center justify-center rounded-md border border-transparent bg-black hover:text-white hover:bg-slate-800 text-white px-8 py-3 text-base font-medium md:py-4 md:px-10 md:text-lg'>
+										Browse NFTs
+									</a>
+								</Link>
 							</div>
 						</div>
 					</div>

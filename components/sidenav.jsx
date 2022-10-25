@@ -1,6 +1,9 @@
 import { Drawer } from 'antd'
 import Link from 'next/link'
 import { useWallet } from '@solana/wallet-adapter-react'
+import { AiOutlineHome } from 'react-icons/ai'
+import { MdCollections } from 'react-icons/md'
+import { BsBook } from 'react-icons/bs'
 
 export default function SideNav({ collapsed, setCollapsed }) {
 	const wallet = useWallet()
@@ -29,20 +32,27 @@ export default function SideNav({ collapsed, setCollapsed }) {
 				<ul>
 					<li className='mb-10'>
 						<Link href='/'>
-							<a className='text-white text-3xl'>Home</a>
+							<a className='text-white text-3xl flex items-center'>
+								<AiOutlineHome className='mr-3' /> Home
+							</a>
 						</Link>
 					</li>
 					{wallet && wallet.connected && (
 						<li className='mb-10'>
 							<Link href='/collection'>
-								<a className='text-white text-3xl'>My Collection</a>
+								<a className='text-white text-3xl flex items-center'>
+									<MdCollections className='mr-3' /> My Collection
+								</a>
 							</Link>
 						</li>
 					)}
 
 					<li className='mb-10'>
 						<Link href='/browse'>
-							<a className='text-white text-3xl'>Browse</a>
+							<a className='text-white text-3xl flex items-center'>
+								<BsBook className='mr-3' />
+								Browse
+							</a>
 						</Link>
 					</li>
 				</ul>
