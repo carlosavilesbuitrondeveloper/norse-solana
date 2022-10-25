@@ -5,6 +5,7 @@ import { useProgram, useNFTs } from '@thirdweb-dev/react/solana'
 import { Row } from 'antd'
 import Item from '../components/item'
 import Logo from '../components/logo'
+import Meta from '../components/meta'
 
 export default function Collection() {
 	const router = useRouter()
@@ -23,6 +24,7 @@ export default function Collection() {
 
 	return (
 		<div className='page-content mx-auto'>
+			<Meta tile='Collection' />
 			<h1 className='text-white text-5xl text-center mt-10 decorative font-semibold mb-20'>Your Treasure Hoard</h1>
 			{isLoading && (
 				<div className='text-white text-4xl w-1/2 mx-auto text-center mt-10'>

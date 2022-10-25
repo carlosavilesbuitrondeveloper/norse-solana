@@ -39,7 +39,7 @@ export default function Minter({ image, program }) {
 				<div className='relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24'>
 					<h2 className='text-6xl md:text-8xl decorative font-semibold text-red-600'>Claim Your Destiny</h2>
 					<p className='text-xl mt-10'>Don't wait. Norse NFT's will be gone soon. Claim one now.</p>
-					<p className='text-xl mt-6'>Claiming is free (for now) and you will receive one random NFT from the unclaimed NFTs..</p>
+					<p className='text-xl mt-6'>Claiming is free (for now) and you will receive one random NFT from the unclaimed NFTs.</p>
 					{!loadingClaimCondition && claimCondition.claimedSupply > claimCondition.maxClaimable && (
 						<button
 							onClick={handleClaim}
@@ -55,7 +55,8 @@ export default function Minter({ image, program }) {
 
 					{!loadingClaimCondition && (
 						<p className='mt-10 text-white text-xl'>
-							Inventory Remaining: {claimCondition.claimedSupply} / {claimCondition.maxClaimable}
+							Supply Claimed: <span className='decorative font-semibold text-3xl'>{claimCondition.claimedSupply}</span> /{' '}
+							<span className='decorative font-semibold text-3xl'>{claimCondition.maxClaimable}</span>
 						</p>
 					)}
 

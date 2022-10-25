@@ -34,7 +34,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Meta title='Norse NFT | Home' />
+			<Meta title='Home' />
 
 			{/* Hero */}
 			<Hero image='https://storage.neptunecs.com/fenrir/ui/wolf.jpg' />

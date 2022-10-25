@@ -1,5 +1,11 @@
 import AuthLayout from '../components/authLayout'
+import Meta from '../components/meta'
 
 export default function Auth() {
-	return <AuthLayout />
+	return (
+		<>
+			<Meta tile='Connect' />
+			<AuthLayout />
+		</>
+	)
 }

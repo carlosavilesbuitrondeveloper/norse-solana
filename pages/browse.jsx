@@ -4,6 +4,7 @@ import { Row } from 'antd'
 import Minter from '../components/minter'
 import Item from '../components/item'
 import Logo from '../components/logo'
+import Meta from '../components/meta'
 
 export default function Browse() {
 	const id = 'T3RaMKRnKnRTA8PXTyzA1mnpSnuMZaeT74fAsURjxX8'
@@ -16,6 +17,7 @@ export default function Browse() {
 
 	return (
 		<>
+			<Meta tile='Browse' />
 			<Minter image='/images/bg-smoke.jpeg' program={program} />
 			<div className='page-content mx-auto'>
 				{isLoading && (

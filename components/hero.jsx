@@ -13,7 +13,8 @@ export default function Hero({ image }) {
 							<span className='block xl:inline'>The end is near, </span> <span className='block text-red-600 xl:inline'>Norse</span> NFT has arrived.
 						</h1>
 						<p className='mx-auto mt-3 max-w-md text-lg text-gray-200 sm:text-xl md:mt-5 md:max-w-3xl'>
-							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+							The dark world is merging with our own. This is the time know as Ragnarok. Claim a champion and prevent the end times or work towards winning a
+							part of new dark world after this one is gone.
 						</p>
 						<div className='mt-10 sm:flex sm:justify-center lg:justify-start'>
 							<div className='rounded-md shadow'>
