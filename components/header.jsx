@@ -21,7 +21,7 @@ export default function Header() {
 					<Link href='/'>
 						<a className='flex items-center'>
 							<Logo className='mr-1 w-2/12 md:w-1/12' />
-							Norse NFT
+							Solana Norse
 						</a>
 					</Link>
 				</div>
