@@ -16,3 +16,61 @@ body {
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+input {
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.heavy {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+
+.decorative {
+	font-family: 'Aboreto' !important;
+}
+
+.truncate {
+	width: 60%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.bg-gradient {
+	background: var(--dark);
+	background: -webkit-linear-gradient(to bottom, var(--dark), var(--main));
+	background: linear-gradient(to bottom, var(--dark), var(--main));
+}
+
+.bg-dark-gradient {
+	background-color: #222222;
+	background-image: linear-gradient(#222222, #121212);
+}
+
+.page-content {
+	max-width: 1400px;
+}

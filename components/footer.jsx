@@ -25,7 +25,7 @@ export default function Footer() {
 					<Col xs={24} md={12} className='mb-1 text-center md:text-left text-lg md:text-xl'>
 						&copy; 2022 Norse Solana NFT
 					</Col>
-					<Col xs={24} md={12} className='flex flex-wrap justify-center md:justify-end w-full' style={{ display: 'flex' }}>
+					<Col xs={24} md={12} className='flex flex-wrap justify-center md:justify-end w-full md:text-xl' style={{ display: 'flex' }}>
 						Solana Hackathon
 					</Col>
 				</Row>
