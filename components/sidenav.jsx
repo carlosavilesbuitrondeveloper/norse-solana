@@ -23,7 +23,7 @@ export default function SideNav({ collapsed, setCollapsed }) {
 			</style>
 
 			<Drawer placement='left' onClose={() => setCollapsed(false)} visible={collapsed}>
-				<p className='text-white text-2xl'>Fenrir Options</p>
+				<p className='text-white text-2xl'>Norse Nav</p>
 			</Drawer>
 		</>
 	)

@@ -24,9 +24,11 @@ export default function Header() {
 					</Link>
 				</div>
 			</div>
-			<Link href='/auth'>
-				<a className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</a>
-			</Link>
+			<div className='main-connect'>
+				<Link href='/auth'>
+					<a className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</a>
+				</Link>
+			</div>
 		</div>
 	)
 }

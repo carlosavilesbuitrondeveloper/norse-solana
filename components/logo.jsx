@@ -14,7 +14,7 @@ export default function Logo(props) {
 		>
 			<path
 				style={{
-					fill: '#121826',
+					fill: 'transparent',
 				}}
 				d='M0 1h1500v1500H0z'
 			/>
