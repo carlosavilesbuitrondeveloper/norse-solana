@@ -1,10 +1,17 @@
 import { HiOutlineMenu } from 'react-icons/hi'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import { useWallet } from '@solana/wallet-adapter-react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useState } from 'react'
 import SideNav from './sidenav'
 
 export default function Header() {
 	const [open, setOpen] = useState(false)
+	const wallet = useWallet()
+
+	useEffect(() => {
+		console.log(wallet)
+	}, [wallet])
 
 	return (
 		<div className='decorative w-full h-12 bg-black text-white flex justify-between items-center p-2 relative z-50'>
@@ -24,11 +31,14 @@ export default function Header() {
 					</Link>
 				</div>
 			</div>
-			<div className='main-connect'>
-				<Link href='/auth'>
-					<a className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</a>
-				</Link>
-			</div>
+			{wallet && !wallet.connected && (
+				<div className='main-connect'>
+					<Link href='/auth'>
+						<a className='bg-white text-black px-4 py-1 rounded-2xl hover:bg-gray-800 hover:text-white transition-all'>Connect Wallet</a>
+					</Link>
+				</div>
+			)}
+			{wallet.connected && <WalletMultiButton />}
 		</div>
 	)
 }

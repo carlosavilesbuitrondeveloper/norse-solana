@@ -7,13 +7,13 @@ import Wrapper from '../components/wrapper'
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Wrapper>
-			<ThirdwebProvider network={'devnet'}>
-				<WalletModalProvider>
+		<ThirdwebProvider network={'devnet'}>
+			<WalletModalProvider>
+				<Wrapper>
 					<Component {...pageProps} />
-				</WalletModalProvider>
-			</ThirdwebProvider>
-		</Wrapper>
+				</Wrapper>
+			</WalletModalProvider>
+		</ThirdwebProvider>
 	)
 }
 
