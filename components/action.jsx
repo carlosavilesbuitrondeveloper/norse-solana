@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Link from 'next/link'
 export default function Action({ image }) {
 	return (
 		<div className='bg-gray-900'>
@@ -16,12 +16,11 @@ export default function Action({ image }) {
 				<p className='mt-4 text-lg leading-6 text-gray-100'>
 					Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
 				</p>
-				<a
-					href='#'
-					className='mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent px-5 py-3 bg-red-600 hover:text-white hover:bg-slate-800 text-white font-medium  sm:w-auto'
-				>
-					Browse NFTs
-				</a>
+				<Link href='/browse'>
+					<a className='mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent px-5 py-3 bg-red-600 hover:text-white hover:bg-slate-800 text-white font-medium  sm:w-auto'>
+						Browse NFTs
+					</a>
+				</Link>
 			</div>
 		</div>
 	)
