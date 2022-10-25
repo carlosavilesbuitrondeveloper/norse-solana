@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useWallet } from '@solana/wallet-adapter-react'
 
 export default function SideNav({ collapsed, setCollapsed }) {
+	const wallet = useWallet()
 	return (
 		<>
 			<style jsx global>
@@ -31,12 +32,13 @@ export default function SideNav({ collapsed, setCollapsed }) {
 							<a className='text-white text-3xl'>Home</a>
 						</Link>
 					</li>
-
-					<li className='mb-10'>
-						<Link href='/collection'>
-							<a className='text-white text-3xl'>My Collection</a>
-						</Link>
-					</li>
+					{wallet && wallet.connected && (
+						<li className='mb-10'>
+							<Link href='/collection'>
+								<a className='text-white text-3xl'>My Collection</a>
+							</Link>
+						</li>
+					)}
 
 					<li className='mb-10'>
 						<Link href='/browse'>

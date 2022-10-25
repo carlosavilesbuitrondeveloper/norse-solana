@@ -2,10 +2,11 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useProgram, useNFTs } from '@thirdweb-dev/react/solana'
 import { Row, Col } from 'antd'
+import Item from '../components/item'
 
 export default function Browse() {
-	const id = '4EwFAG2i3kZES9shKWd3UYTkbWzQv8rgXL5cGP33kMuj'
-	const { program, error } = useProgram(id, 'nft-collection')
+	const id = 'T3RaMKRnKnRTA8PXTyzA1mnpSnuMZaeT74fAsURjxX8'
+	const { program, error } = useProgram(id, 'nft-drop')
 	const [programInfo, setProgramInfo] = useState(null)
 	const { data: metadata, isLoading } = useNFTs(program)
 
@@ -25,12 +26,11 @@ export default function Browse() {
 
 	return (
 		<div className='page-content mx-auto'>
+			{isLoading && <p className='text-white text-4xl'>Loading NFTs.</p>}
 			{!isLoading && metadata && (
 				<Row gutter={12} className='mt-10'>
 					{metadata.map(item => (
-						<Col xs={12} lg={8} key={item.metadata.id} className='flex items-center justify-center mb-10'>
-							<img src={item.metadata.image} alt={item.metadata.name} className='block w-7/12' />
-						</Col>
+						<Item item={item} key={item.metadata.name} program={program} />
 					))}
 				</Row>
 			)}
