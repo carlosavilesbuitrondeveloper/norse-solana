@@ -4,6 +4,7 @@ import { useWallet } from '@solana/wallet-adapter-react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { MdCollections } from 'react-icons/md'
 import { BsBook } from 'react-icons/bs'
+import { TbBuildingCastle } from 'react-icons/tb'
 
 export default function SideNav({ collapsed, setCollapsed }) {
 	const wallet = useWallet()
@@ -52,6 +53,15 @@ export default function SideNav({ collapsed, setCollapsed }) {
 							<a className='text-white text-3xl flex items-center'>
 								<BsBook className='mr-3' />
 								Browse
+							</a>
+						</Link>
+					</li>
+
+					<li className='mb-10'>
+						<Link href='/story'>
+							<a className='text-white text-3xl flex items-center'>
+								<TbBuildingCastle className='mr-3' />
+								Story
 							</a>
 						</Link>
 					</li>
