@@ -6,7 +6,9 @@ Solana Norse is a set of 12 limited edition NFTs currently on the Solana Devnet.
 
 ## Visit the site
 
-https://master.d29ylm786b08xa.amplifyapp.com/collection
+https://master.d29ylm786b08xa.amplifyapp.com
+
+![Home] (/screens/home.png =500x)
 
 ## Story
 
@@ -16,11 +18,17 @@ The story focuses on an end of the world clash between the forces of good and ev
 
 Connecting through the phantom wallet appears to be a bit slow at times. To prevent the user from feeling that there is an error happening I made an auth page dedicated to wallet connection. The user gets the feeling that a process is happening and is rerouted to their collection when the connect is complete.
 
-There is function yet on the Solana React Thirdweb sdk to get all the claimed NFTs in a collection. In order to make the collection page work, we loop through all the NFTs in the drop and find the connected wallet balance for each.
+https://master.d29ylm786b08xa.amplifyapp.com/auth
+
+There is no function yet on the Solana React Thirdweb sdk to get all the claimed NFTs in a collection. In order to make the collection page work, we loop through all the NFTs in the drop and find the connected wallet balance for each. If the balance is greater than 0, then we show the NFT.
+
+RPC - The Thirdweb RPC seemed to be hitting requests limits. We are now using a dedicated RPC url provided by Alchemy.
 
 ## Pages
 
 - Home - The Home page gives an intro to the story and acts as a synopsis for the world of Solana Norse.
+
+- Auth - Dedicated page for wallet connection.
 
 - Browse - This is where all NFTs in the collection are displayed and can be minted.
 
@@ -39,3 +47,6 @@ https://www.pexels.com/search/videos/storm%20ocean%20/
 
 After comparing hosting, I found that the best speed for such a project was achieved on AWS amplfiy hosting.
 https://aws.amazon.com/amplify/
+
+RPC - This project uses a dedicated RPC url from Alchemy.
+https://www.alchemy.com/
