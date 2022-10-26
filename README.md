@@ -40,6 +40,8 @@ RPC - The Thirdweb RPC seemed to be hitting requests limits. We are now using a 
 
 - Collection - This page can only be accessed through a connect wallet. It shows the NFTs the connected wallet has claimed on the collection.
 
+<img src="/screens/collection.png" width="500" alt="collection page"/>
+
 ### Development
 
 The project is built with NextJS and the ThirdWeb SDK. Currently the only backend for the site is the Solana blockchain. The rest of the site operates via the client frontend framework.
