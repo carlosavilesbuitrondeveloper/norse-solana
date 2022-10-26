@@ -5,12 +5,9 @@ export default function Minter({ image, program }) {
 	const { mutateAsync: claim, isLoading, error } = useClaimNFT(program)
 
 	const handleClaim = async () => {
-		try {
-			await claim({ amount: 1 })
-			console.log('claim done')
-		} catch (e) {
-			console.log(e)
-		}
+		console.log('claim start')
+
+		claim({ amount: 1 })
 	}
 
 	return (

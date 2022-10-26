@@ -58,13 +58,18 @@ export default function SideNav({ collapsed, setCollapsed }) {
 							</Link>
 						</li>
 						<li className='mb-10'>
-							<a href='https://github.com/carlosavilesbuitrondeveloper/norse-solana' target='_blank' className='text-white text-3xl flex items-center'>
+							<a
+								rel='noreferrer'
+								href='https://github.com/carlosavilesbuitrondeveloper/norse-solana'
+								target='_blank'
+								className='text-white text-3xl flex items-center'
+							>
 								<AiFillGithub className='mr-3' />
 								Github
 							</a>
 						</li>
 						<li className='mb-10'>
-							<a href='https://youtu.be/gKkV_Ez2tNs' target='_blank' className='text-white text-3xl flex items-center'>
+							<a rel='noreferrer' href='https://youtu.be/gKkV_Ez2tNs' target='_blank' className='text-white text-3xl flex items-center'>
 								<GrYoutube className='mr-3' />
 								Video
 							</a>
