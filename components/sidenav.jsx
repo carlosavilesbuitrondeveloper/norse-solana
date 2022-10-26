@@ -5,6 +5,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { MdCollections } from 'react-icons/md'
 import { BsBook } from 'react-icons/bs'
 import { TbBuildingCastle } from 'react-icons/tb'
+import Logo from '../components/logo'
 
 export default function SideNav({ collapsed, setCollapsed }) {
 	const wallet = useWallet()
@@ -30,42 +31,49 @@ export default function SideNav({ collapsed, setCollapsed }) {
 			</style>
 
 			<Drawer placement='left' onClose={() => setCollapsed(false)} open={collapsed}>
-				<ul>
-					<li className='mb-10'>
-						<Link href='/'>
-							<a className='text-white text-3xl flex items-center'>
-								<AiOutlineHome className='mr-3' /> Home
-							</a>
-						</Link>
-					</li>
-					{wallet && wallet.connected && (
+				<div className='flex h-full flex-col justify-between'>
+					<ul>
 						<li className='mb-10'>
-							<Link href='/collection'>
+							<Link href='/'>
 								<a className='text-white text-3xl flex items-center'>
-									<MdCollections className='mr-3' /> My Collection
+									<AiOutlineHome className='mr-3' /> Home
 								</a>
 							</Link>
 						</li>
-					)}
+						{wallet && wallet.connected && (
+							<li className='mb-10'>
+								<Link href='/collection'>
+									<a className='text-white text-3xl flex items-center'>
+										<MdCollections className='mr-3' /> My Collection
+									</a>
+								</Link>
+							</li>
+						)}
 
-					<li className='mb-10'>
-						<Link href='/browse'>
-							<a className='text-white text-3xl flex items-center'>
-								<BsBook className='mr-3' />
-								Browse
-							</a>
-						</Link>
-					</li>
+						<li className='mb-10'>
+							<Link href='/browse'>
+								<a className='text-white text-3xl flex items-center'>
+									<BsBook className='mr-3' />
+									Browse
+								</a>
+							</Link>
+						</li>
 
-					<li className='mb-10'>
-						<Link href='/story'>
-							<a className='text-white text-3xl flex items-center'>
-								<TbBuildingCastle className='mr-3' />
-								Story
-							</a>
-						</Link>
-					</li>
-				</ul>
+						<li className='mb-10'>
+							<Link href='/story'>
+								<a className='text-white text-3xl flex items-center'>
+									<TbBuildingCastle className='mr-3' />
+									Story
+								</a>
+							</Link>
+						</li>
+					</ul>
+
+					<div>
+						<Logo className='mx-auto w-1/2' />
+						<p className='text-white text-2xl text-center font-semibold'>Solana Norse</p>
+					</div>
+				</div>
 			</Drawer>
 		</>
 	)

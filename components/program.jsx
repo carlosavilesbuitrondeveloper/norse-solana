@@ -1,3 +1,3 @@
-const programAddress = 'T3RaMKRnKnRTA8PXTyzA1mnpSnuMZaeT74fAsURjxX8'
+const programAddress = 'BR3SuLAHcWfbM5kzzk4TsB25dELR6xLKgqNQrt4QJTsa'
 
 export default programAddress
