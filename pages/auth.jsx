@@ -4,7 +4,7 @@ import Meta from '../components/meta'
 export default function Auth() {
 	return (
 		<>
-			<Meta tile='Connect' />
+			<Meta title='Connect' />
 			<AuthLayout />
 		</>
 	)

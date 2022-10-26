@@ -18,7 +18,7 @@ export default function Browse() {
 
 	return (
 		<>
-			<Meta tile='Browse' />
+			<Meta title='Browse' />
 			<Minter image='/images/bg-smoke.jpeg' program={program} />
 			<div className='page-content mx-auto'>
 				{isLoading && (
