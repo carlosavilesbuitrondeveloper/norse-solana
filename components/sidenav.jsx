@@ -1,10 +1,10 @@
 import { Drawer } from 'antd'
 import Link from 'next/link'
 import { useWallet } from '@solana/wallet-adapter-react'
-import { AiOutlineHome } from 'react-icons/ai'
+import { AiOutlineHome, AiFillGithub } from 'react-icons/ai'
 import { MdCollections } from 'react-icons/md'
 import { BsBook } from 'react-icons/bs'
-import { TbBuildingCastle } from 'react-icons/tb'
+import { GrYoutube } from 'react-icons/gr'
 import Logo from '../components/logo'
 
 export default function SideNav({ collapsed, setCollapsed }) {
@@ -49,7 +49,6 @@ export default function SideNav({ collapsed, setCollapsed }) {
 								</Link>
 							</li>
 						)}
-
 						<li className='mb-10'>
 							<Link href='/browse'>
 								<a className='text-white text-3xl flex items-center'>
@@ -57,6 +56,18 @@ export default function SideNav({ collapsed, setCollapsed }) {
 									Browse
 								</a>
 							</Link>
+						</li>
+						<li className='mb-10'>
+							<a href='https://github.com/carlosavilesbuitrondeveloper/norse-solana' target='_blank' className='text-white text-3xl flex items-center'>
+								<AiFillGithub className='mr-3' />
+								Github
+							</a>
+						</li>
+						<li className='mb-10'>
+							<a href='https://youtu.be/gKkV_Ez2tNs' target='_blank' className='text-white text-3xl flex items-center'>
+								<GrYoutube className='mr-3' />
+								Video
+							</a>
 						</li>
 					</ul>
 
