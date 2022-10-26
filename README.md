@@ -8,7 +8,7 @@ Solana Norse is a set of 12 limited edition NFTs currently on the Solana Devnet.
 
 https://master.d29ylm786b08xa.amplifyapp.com
 
-<img src="/screens/home.png" width="200" alt="home page"/>
+<img src="/screens/home.png" width="500" alt="home page"/>
 
 ## Story
 
@@ -28,9 +28,15 @@ RPC - The Thirdweb RPC seemed to be hitting requests limits. We are now using a 
 
 - Home - The Home page gives an intro to the story and acts as a synopsis for the world of Solana Norse.
 
+<img src="/screens/characters.png" width="500" alt="characters"/>
+
 - Auth - Dedicated page for wallet connection.
 
+<img src="/screens/auth.png" width="500" alt="auth page"/>
+
 - Browse - This is where all NFTs in the collection are displayed and can be minted.
+
+<img src="/screens/browse.png" width="500" alt="browse page"/>
 
 - Collection - This page can only be accessed through a connect wallet. It shows the NFTs the connected wallet has claimed on the collection.
 
