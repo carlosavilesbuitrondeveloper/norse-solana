@@ -10,8 +10,6 @@ export default function Item({ item, program, type = 'browse' }) {
 		const loadBalance = async () => {
 			const balance = await program.balance(item.metadata.id)
 			if (balance > 0) setOwned(true)
-			console.log('balance')
-			console.log(balance)
 		}
 		if (wallet && wallet.connected) {
 			loadBalance()

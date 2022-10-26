@@ -29,7 +29,7 @@ export default function SideNav({ collapsed, setCollapsed }) {
 				`}
 			</style>
 
-			<Drawer placement='left' onClose={() => setCollapsed(false)} visible={collapsed}>
+			<Drawer placement='left' onClose={() => setCollapsed(false)} open={collapsed}>
 				<ul>
 					<li className='mb-10'>
 						<Link href='/'>

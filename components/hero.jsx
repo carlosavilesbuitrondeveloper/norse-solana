@@ -10,11 +10,11 @@ export default function Hero({ image }) {
 							style={{ lineHeight: '1.1em' }}
 							className='font-semibold decorative tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl'
 						>
-							<span className='block xl:inline'>The end is near, </span> <span className='block text-red-600 xl:inline'>Norse</span> NFT has arrived.
+							<span className='block xl:inline'>The end is near, </span> <span className='block text-red-600 xl:inline'>Solana Norse</span> has arrived.
 						</h1>
 						<p className='mx-auto mt-3 max-w-md text-lg text-gray-200 sm:text-xl md:mt-5 md:max-w-3xl'>
 							The dark world is merging with our own. This is the time know as Ragnarok. Claim a champion and prevent the end times or work towards winning a
-							part of new dark world after this one is gone.
+							part of the new dark world after this one is gone.
 						</p>
 						<div className='mt-10 sm:flex sm:justify-center lg:justify-start'>
 							<div className='rounded-md shadow'>
