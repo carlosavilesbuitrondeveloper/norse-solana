@@ -10,6 +10,10 @@ https://master.d29ylm786b08xa.amplifyapp.com
 
 <img src="/screens/home.png" width="500" alt="home page"/>
 
+## Intro Video
+
+https://youtu.be/gKkV_Ez2tNs
+
 ## Story
 
 The story focuses on an end of the world clash between the forces of good and evil. Each NFT is a character in the storyline that is currently being written. The NFT collection acts as a preview and outline for some of the major characters in the story.
