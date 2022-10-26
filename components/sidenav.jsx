@@ -58,15 +58,6 @@ export default function SideNav({ collapsed, setCollapsed }) {
 								</a>
 							</Link>
 						</li>
-
-						<li className='mb-10'>
-							<Link href='/story'>
-								<a className='text-white text-3xl flex items-center'>
-									<TbBuildingCastle className='mr-3' />
-									Story
-								</a>
-							</Link>
-						</li>
 					</ul>
 
 					<div>

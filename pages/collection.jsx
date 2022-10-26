@@ -26,7 +26,8 @@ export default function Collection() {
 	return (
 		<div className='page-content mx-auto'>
 			<Meta tile='Collection' />
-			<h1 className='text-white text-5xl text-center mt-10 decorative font-semibold mb-20'>Your Treasure Hoard</h1>
+			<h1 className='text-white text-5xl text-center mt-10 decorative font-semibold mb-6'>Your Treasure Hoard</h1>
+			<p className='text-white mb-20 text-lg'>Your claimed NFTs on Solana Norse will be shown below.</p>
 			{isLoading && (
 				<div className='text-white text-4xl w-1/2 mx-auto text-center mt-10'>
 					<p>Loading NFTs.</p>

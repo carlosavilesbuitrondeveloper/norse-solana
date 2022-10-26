@@ -40,7 +40,7 @@ export default function Minter({ image, program }) {
 					<h2 className='text-6xl md:text-8xl decorative font-semibold text-red-600'>Claim Your Destiny</h2>
 					<p className='text-xl mt-10'>Don&apos;t wait. Norse NFT&apos;s will be gone soon. Claim one now.</p>
 					<p className='text-xl mt-6'>Claiming is free (for now) and you will receive one random NFT from the unclaimed NFTs.</p>
-					{!loadingClaimCondition && claimCondition.claimedSupply > claimCondition.maxClaimable && (
+					{!loadingClaimCondition && parseInt(claimCondition.claimedSupply) < parseInt(claimCondition.maxClaimable) && (
 						<button
 							onClick={handleClaim}
 							className='text-5xl decorative mx-auto mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent px-5 py-3 bg-red-600 hover:text-white hover:bg-slate-800 text-white font-medium  sm:w-auto'

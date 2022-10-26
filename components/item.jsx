@@ -22,7 +22,7 @@ export default function Item({ item, program, type = 'browse' }) {
 
 	if (type !== 'browse' && owned) {
 		return (
-			<Col xs={12} lg={8} className='flex flex-col items-center justify-center mb-10'>
+			<Col xs={12} lg={8} className='flex flex-col items-center justify-center mb-20'>
 				<h3 className='text-3xl decorative mb-6'>{item.metadata.name}</h3>
 				<img src={item.metadata.image} alt={item.metadata.name} className='block w-7/12 mb-6 rounded-full' />
 				<div className='item-body text-left'>
@@ -42,7 +42,7 @@ export default function Item({ item, program, type = 'browse' }) {
 	}
 
 	return (
-		<Col xs={12} lg={8} className='flex flex-col items-center justify-center mb-10'>
+		<Col xs={12} lg={8} className='flex flex-col items-center justify-center mb-20'>
 			<h3 className='text-3xl decorative mb-6'>{item.metadata.name}</h3>
 			<img src={item.metadata.image} alt={item.metadata.name} className='block w-7/12 mb-6 rounded-full' />
 			<div className='item-body text-left'>
