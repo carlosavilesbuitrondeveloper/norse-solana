@@ -34,7 +34,7 @@ RPC - The Thirdweb RPC seemed to be hitting requests limits. We are now using a 
 
 <img src="/screens/auth.png" width="500" alt="auth page"/>
 
-- Browse - This is where all NFTs in the collection are displayed and can be minted.
+- Browse - This is where all NFTs in the collection are displayed and can be claimed.
 
 <img src="/screens/browse.png" width="500" alt="browse page"/>
 
