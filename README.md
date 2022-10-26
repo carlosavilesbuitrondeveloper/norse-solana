@@ -8,7 +8,7 @@ Solana Norse is a set of 12 limited edition NFTs currently on the Solana Devnet.
 
 https://master.d29ylm786b08xa.amplifyapp.com
 
-![Home](screens/home.png =500x)
+<img src="/screens/home.png" width="200" alt="home page"/>
 
 ## Story
 
